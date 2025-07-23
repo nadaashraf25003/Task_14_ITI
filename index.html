@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_14</title>
+    <link rel="stylesheet" href="Assignment_14.css">
+</head>
+
+<body>
+    <!-- ChangeColors start  -->
+    <section class="ChangeColors">
+        <h1>Text Color Range Controller</h1>
+        <form>
+            <div class="redField">
+                <label for="Red">Red&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="range" id="Red" name="Red" min="0" max="255" value="0">
+                <span id="RedSpan">100</span>
+            </div>
+            <div class="greenField">
+                <label for="Green">Green</label>
+                <input type="range" id="Green" name="Green" min="0" max="255" value="0">
+                <span id="GreenSpan">100</span>
+            </div>
+            <div class="blueField">
+                <label for="Blue">Blue&nbsp;&nbsp;&nbsp;</label>
+                <input type="range" id="Blue" name="Blue" min="0" max="255" value="100">
+                <span id="BlueSpan">100</span>
+            </div>
+            <div class="second">
+                <div class="text">
+                    <h3 id="changedColor">Change the 3 color Ranges above and observe my color change</h3>
+                </div>
+                <div class="color">
+                    <div id="palette"></div>
+                    <span id="paletteSpan">#000064</span>
+                </div>
+                <button id="reset">Reset To Defualt</button>
+            </div>
+        </form>
+
+    </section>
+
+    <!-- ChangeColors end  -->
+
+    <!-- AudionControl start  -->
+    <section class="AudionControl">
+        <h1>Audio Player</h1>
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+        <div class="progress_sec">
+            <span id="currentTime">0:00</span>
+            <div class="progressBar_div">
+                <div id="progressBar"></div>
+            </div>
+            <span id="duration">0:00</span>
+        </div>
+        <div class="controls">
+            <button id="play">Play</button>
+            <button id="stop">Stop</button>
+            <button id="rewindBtn">|&lt;&lt;</button>
+            <button id="backBtn">&lt;</button>
+            <button id="forwardBtn">&gt;</button>
+            <button id="fastForwardBtn">&gt;&gt;|</button>
+            <button id="mute">Mute</button>
+        </div>
+        <div class="controls">
+            <div class="volume">
+                <span id="volumeSpan">Volume : 50%</span>
+                <input type="range" id="volume" min="0" max="1" value="0.5" step="0.1">
+            </div>
+            <div class="speed">
+                <input type="range" id="speed" min="0.5" max="5" value="1" step="0.5">
+                <span id="speedSpan">1x</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AudionControl end -->
+
+
+  <script src="Assignment_14.js"></script>
+</body>
+
+</html>
